@@ -1,0 +1,23 @@
+span{
+    color: aqua;
+}
+
+h1{
+    color: pink;
+    border: 5px solid orange;
+}
+
+.name{
+    color: rgb(0, 65, 255);
+    /*
+    rgb is used for rgb colors and rgba is used for the desiered amount of opacity [0,1]
+    #000000 can also be used if the hex code of the color is known
+    first 2 are for red, then green and then blue
+    numbers range from 00 to ff
+    00ff00 is green and so on*/
+    
+    /*
+    color: hsl([0,240],%,%) is also a method to give hue, saturation and luminescence
+    hue 0 - red, 120 - green, 240 - blue  
+    */
+}

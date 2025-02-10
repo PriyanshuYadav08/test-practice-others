@@ -7,5 +7,6 @@ e = v - 1
 
 
 Weights
-
 can be +, -, 0
+
+SHORTEST PATH FIRST

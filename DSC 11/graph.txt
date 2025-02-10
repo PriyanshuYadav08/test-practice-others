@@ -5,8 +5,9 @@ v (vertices) > e (edges)
 e = v - 1
 
 
-Weights
+WEIGHTS
 can be +, -, 0
+
 
 SHORTEST PATH FIRST
 - start point, end point
@@ -14,4 +15,44 @@ SHORTEST PATH FIRST
 - e, v, w
 - e - route path, w - cost of travelling distance
 
-DIJKSTRA ALGORITHM
+
+DIJKSTRA ALGORITHM - O(n**2) - isko isse jada reduce nahi kar sakte h
+- our objective to minimise the Weights
+- Relaxation
+    if (d[u] + c[u,v] < d[v]){
+        d[v] = d[u] + c[u,v];
+    }
+
+
+MINIMUM SPANNING TREE
+- G(v,e,w)
+- we should list all the minimum edges such that there exists no vertex in the set which is not connected
+- no repetition of vertex
+- no repetition of edges
+- no cycle
+- every tree is a graph, every graph is not a tree
+- the solution was given by Prims and Kruskals
+
+
+PRIMS
+total = v
+vi = {vi -> vj} minimum
+
+
+KRUSKALS
+- let us start with all minimised costs
+- no cycle is compulsory
+    Kruskals(G,w)   //G=(v,e)
+    A <- phi
+    for each v belong G{
+        make set v()
+        sort_set in non-decreasing / increasing order{
+            for each edge[u,v] belong G,E{
+                if find_set(u){
+                    A = A union(u,v)
+                    union(u,v)
+                }
+                return A
+            }
+        }
+    }

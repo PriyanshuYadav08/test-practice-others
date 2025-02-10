@@ -1,0 +1,11 @@
+GRAPH
+
+e = v
+e (edges) > v (vertices)
+v (vertices) > e (edges) 
+e = v - 1
+
+
+Weights
+
+can be +, -, 0

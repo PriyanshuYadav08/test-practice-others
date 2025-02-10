@@ -73,3 +73,4 @@ Problem - note down the nearest railway station around the place, or take the st
             - water bottle - 1kg
             - electronics - 2.5kg
         - mention the other essential items required within weight limit
+        - submission date - Friday, 14 Feb

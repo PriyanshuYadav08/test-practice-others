@@ -56,3 +56,17 @@ KRUSKALS
             }
         }
     }
+
+
+Problem - DIJKSTRA ka code likhna h
+Problem - 
+        - plan a journey from all the sources taking distance as edge weight
+        - calculate total journey expenditure based on 3-tier ac class railway ticket
+        - suppose the maximum weight carrying capacity of the traveller is 15kg and 
+            - one pair of cloth weighs - 700gms
+            - blanket and other - 2kg
+            - other essential items - 1kg
+            - reserve 1-time meal - 500gms
+            - water bottle - 1kg
+            - electronics - 2.5kg
+        - mention the other essential items required within weight limit

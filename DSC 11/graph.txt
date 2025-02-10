@@ -1,5 +1,4 @@
 GRAPH
-
 e = v
 e (edges) > v (vertices)
 v (vertices) > e (edges) 
@@ -10,3 +9,9 @@ Weights
 can be +, -, 0
 
 SHORTEST PATH FIRST
+- start point, end point
+- all vertices visited only once
+- e, v, w
+- e - route path, w - cost of travelling distance
+
+DIJKSTRA ALGORITHM

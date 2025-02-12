@@ -3,4 +3,18 @@ DYNAMIC PROGRAMMING
 - tabulation or memorization
 - find all possible solution set and then pick up the best solution set to get the solution set
 - recursive approach is used by a recursive solution set is not formed
-- 
+
+
+MEMORIZATION
+A[n] = -1   O(1)
+
+A[0] = 0    |O(1)
+A[1] = 1    |
+
+for (i=1;i<n;i++){          |
+    A[i] = A[i-1] + A[i-2]  | O(n)
+}                           |
+return A;   |O(1)
+
+T(n) = n + c
+T(n) = O(n)

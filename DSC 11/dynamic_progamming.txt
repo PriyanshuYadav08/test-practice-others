@@ -6,8 +6,7 @@ DYNAMIC PROGRAMMING
 
 
 MEMORIZATION
-A[n] = -1   O(1)
-
+A[n] = -1   |
 A[0] = 0    |O(1)
 A[1] = 1    |
 

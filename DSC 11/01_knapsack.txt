@@ -1,0 +1,12 @@
+0/1 KANPSACK PROBLEM USING DP
+- tabulation method is used
+- W, Wi, Pi/Ci
+- item ke part nahi kar sakte h
+- optimaization problem
+
+ALGO
+n, total_items = 4
+c, capacity = 8
+profit = 1 2 5 6
+Wi     = 2 3 4 5
+- tabulation is in notebook (peeche)

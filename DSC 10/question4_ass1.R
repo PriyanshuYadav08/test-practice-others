@@ -1,0 +1,8 @@
+convict_wages_data <- read.csv("./Convict_wages.csv")
+print(convict_wages_data)
+library(readxl)
+excel_data <- read_excel("./literacy_rate.xls")
+write.csv(excel_data,"./literacy_rate.csv", row.names = FALSE)
+print(excel_data)
+literacy_rate_csv <- read.csv("./literacy_rate.csv")
+print(literacy_rate_csv)

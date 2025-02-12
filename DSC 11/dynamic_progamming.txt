@@ -1,0 +1,6 @@
+DYNAMIC PROGRAMMING
+- optimal solving problem
+- tabulation or memorization
+- find all possible solution set and then pick up the best solution set to get the solution set
+- recursive approach is used by a recursive solution set is not formed
+- 

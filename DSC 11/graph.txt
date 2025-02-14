@@ -59,6 +59,7 @@ KRUSKALS
 
 
 Problem - DIJKSTRA ka code likhna h
+
 Problem - note down the nearest railway station around the place, or take the state capital as destination
 		- note down all the distances from the railway route
         - plan a journey from all the sources taking distance as edge weight

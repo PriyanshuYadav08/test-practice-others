@@ -1,0 +1,28 @@
+MATRIX CHAIN MULTIPLICATION 
+Objective - To minimise the multiplication cost
+Constraints - Order reamins same and does not change
+
+1. A = [1 6          B = [3 7       C = [15 37          8 times multiplied
+        7 4]              2 5]           29 69]
+
+2. A = [2 1 4        B = [7 5       C = [46 32          12 times multiplied
+        5 7 3]            0 6            59 79]
+                          8 4]
+
+3. A = [5 2 8        B = [7         C = [109            9 times multiplied
+        1 1 8             1              80
+        7 3 7]            9]             115]
+
+Question - Find the product of these matrices and the number of multiplications done
+
+Question - A = 4x3
+           B = 3x6
+           C = 6x2
+           D = 2x4
+        A(B(CD)) - 168
+        (AB)(CD) - 216
+        ((AB)C)D - 152
+        (A(BC))D - 92
+        A((BC)D) - 108
+
+Can be solved by DP (Tabulations)

@@ -26,3 +26,35 @@ Question - A = 4x3
         A((BC)D) - 108
 
 Can be solved by DP (Tabulations)
+
+Example 1 ->
+A1 = 3x2
+A2 = 2x4
+A3 = 4x2
+A4 = 2x5
+
+take the repeated dimensions together - 
+        3       2 2     4 4     2 2     5 
+        d0      d2      d2      d3      d4
+
+c[i,j] = min(i<=k<j) { c[i, k] + c[k+1, j] + d(i-1).d(k).d(j) }
+
+//picture taken on 19/02/25
+//picture taken on 19/02/25
+//picture taken on 19/02/25
+
+final answer of this example - [A1(A2.A3)]A4
+
+Example 2 ->
+A = 4x3
+B = 3x6
+C = 6x2
+D = 2x4
+E = 4x5
+
+4       3 3     6 6     2 2     4 4     5
+d0      d1      d2      d3      d4      d5
+
+c[i,j] = min(i<=k<j) { c[i, k] + c[k+1, j] + d(i-1).d(k).d(j) }
+
+//same process as the previous Example 1

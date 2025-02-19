@@ -58,3 +58,5 @@ d0      d1      d2      d3      d4      d5
 c[i,j] = min(i<=k<j) { c[i, k] + c[k+1, j] + d(i-1).d(k).d(j) }
 
 //same process as the previous Example 1
+
+final answer of this example - [A(B.C)](D.E)

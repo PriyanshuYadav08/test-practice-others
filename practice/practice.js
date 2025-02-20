@@ -25,4 +25,3 @@ function outfun(x){
 }
 const number=outfun(5);
 number();
-

@@ -3,12 +3,21 @@ LONGEST COMMON SUB-SEQUENCE
 - we will most prbably use tabulation
 
 Given - two strings or sequences
-
 S1 - A B C B D A B
 S2 - B D C A B A 
+//picture taken on 20/02/25
 
 if (S1[i] == S2[j])
     LCS(i,j) = 1 + LCS(i-1, j-1);   //previous diagonal element
 else
     LCS(i,j) = max(LCS(i-1, j), LCS(i, j-1));
 
+Example 1 -
+S1 - A B A A B A
+S2 - B A B B A B
+
+Example 2 -
+S1 - 1 0 0 1 0 1 0 1
+S2 - 0 1 0 1 1 0 1 1 0
+
+//Recursive tree approach for LONGEST COMMON SUB-SEQUENCE

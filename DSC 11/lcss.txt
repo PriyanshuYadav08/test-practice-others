@@ -1,0 +1,14 @@
+LONGEST COMMON SUB-SEQUENCE
+
+- we will most prbably use tabulation
+
+Given - two strings or sequences
+
+S1 - A B C B D A B
+S2 - B D C A B A 
+
+if (S1[i] == S2[j])
+    LCS(i,j) = 1 + LCS(i-1, j-1);   //previous diagonal element
+else
+    LCS(i,j) = max(LCS(i-1, j), LCS(i, j-1));
+

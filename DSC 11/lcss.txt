@@ -21,3 +21,6 @@ S1 - 1 0 0 1 0 1 0 1
 S2 - 0 1 0 1 1 0 1 1 0
 
 //Recursive tree approach for LONGEST COMMON SUB-SEQUENCE
+
+if the number of nodes is = n 
+therefore the number of total arrangements = (2n)C(n) / (n+1)

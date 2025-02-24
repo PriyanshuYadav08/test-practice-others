@@ -22,3 +22,13 @@ w(i, j) = ∑(n, i=1) freq(i)
 //picture taken on 24/02/25
 //picture taken on 24/02/25
 //picture taken on 24/02/25
+
+Example 1 ->
+i    -> 1   2   3   4
+item -> 10  20  30  40
+freq -> 4   2   6   3
+
+//picture taken on 24/02/25
+
+application - sorting of items, files, strings with freq saath mein di gyi ho
+complete binary tree

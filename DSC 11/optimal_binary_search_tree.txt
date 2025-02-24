@@ -1,2 +1,24 @@
 OPTIMAL BINARY SEARCH TREE
 
+i    -> 1   2   3   4
+item -> A   B   C   D
+freq -> 2   6   4   5
+
+three tables to be made - Cost, Root, Weight/Frequency tables
+
+Cost ^ Root (superscript) -> C^r
+
+for n different items, we will create table with dimension (n+1 x n+1)
+
+j -> x axis -> item cost
+i -> y aixs -> total item
+
+//picture taken on 24/02/25
+
+c[i, j] = min(i < k <= j) { c[i, k-1] + c[k, j] } + w(i, j)
+w(i, j) = ∑(n, i=1) freq(i)
+
+//picture taken on 24/02/25
+//picture taken on 24/02/25
+//picture taken on 24/02/25
+//picture taken on 24/02/25

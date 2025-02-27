@@ -1,0 +1,24 @@
+RELATIONAL ALGEBRA
+
+UNARY RELATIONAL OPERATIONS
+    Select - (sigma)
+    Project - (pi)
+    Rename - (phi)
+
+SELECT
+- Select operation is used to select a subset of the tuples from a relation based on a selection condition
+- selection condition acts as a filter
+- keeps only thoe tuples that satisfy the qualifying condition
+- tuples satisfying the condition are selected whereas the other tuples are discarded (filtered out) 
+
+PROJECT
+- denoted by (pi)
+- keeps certain columns (attributes) from a relation and discards the other columns
+- creates a vertical partioning
+    - the list of specified columns is kept in each tuple
+- duplicate tupls are discarded
+- the numbers of tuples in the reslut of projection is always less or equal to the number of tuples in R
+- PROJECT is not commutative
+
+QUESTION
+- To retrive the first name, last name and salary of all employees who work in dno 5.

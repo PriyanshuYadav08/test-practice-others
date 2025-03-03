@@ -1,0 +1,7 @@
+FLOYD WARSHALL ALGORITHM
+
+adjacency = O(n^2),
+
+nxn Matrix 
+
+w[i][j]= min{w[i][j], w[i][k] + w[k][j]}       //k = 1:n

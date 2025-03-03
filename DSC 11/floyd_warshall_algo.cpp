@@ -19,6 +19,14 @@ void floydWarshall(vector<vector<int>>& dist, int V) {
             }
         }
     }
+
+    // Check for negative weight cycles
+    for (int i = 0; i < V; i++) {
+        if (dist[i][i] < 0) {
+            cout << "Negative weight cycle detected.\n";
+            return;
+        }
+    }
 }
 
 int main() {

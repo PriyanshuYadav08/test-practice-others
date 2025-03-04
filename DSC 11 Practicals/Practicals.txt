@@ -2,14 +2,14 @@
 2. Insertion sort
 3. Selection sort
 4. Quick sort
-    5. Karatsuba’s integer multiplication
+5. Karatsuba’s integer multiplication
     6. Strauss Martix multiplication Greedy approach
 7. Knapsack
 8. Huffman encoding
 9. Optimal merge
     10.	Job scheduling to maximize profit by scheduling the job latest
 11.	Prims
-    12.	Minimum spanning tree
+12.	Minimum spanning tree
 13.	Dijkstra’s algorithm
     14. Matrix Chain Multiplication 
     15. Longest Common Subsequence

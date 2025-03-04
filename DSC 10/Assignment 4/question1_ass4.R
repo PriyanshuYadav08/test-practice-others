@@ -9,7 +9,7 @@ sd_weight <- sd(weights)
 cat("Sample Mean:", mean_weight, "\n")
 cat("Sample Standard Deviation:", sd_weight, "\n")
 
-breaks <- seq(13.95, max(weights) + 1, by = 1)  # Interval size of 1
+breaks <- seq(13.95, max(weights) + 1, by = 1)
 
 hist(weights, breaks = breaks, probability = TRUE, 
      col = "lightblue", border = "black", main = "Relative Frequency Histogram",

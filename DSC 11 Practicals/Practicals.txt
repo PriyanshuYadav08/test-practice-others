@@ -13,5 +13,5 @@
 13.	Dijkstra’s algorithm
     14. Matrix Chain Multiplication 
     15. Longest Common Subsequence
-    16. Optimal Binary Search Tree
+16. Optimal Binary Search Tree
 17. Floyd Warshall Algorithm

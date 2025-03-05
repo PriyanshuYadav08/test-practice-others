@@ -1,0 +1,17 @@
+TRAVELLING SALESMAN PROBLEM
+
+let V set of all vertices,
+    S a subset of vertices
+
+    D[Vi][S] is length of the shortest path from Vi to Vj (origin, phi, V1) via S
+    this is exactly once
+
+    [] -> distance, {} -> set/vertex, S = {V3}
+
+    D[V2][S] = length [V2, V3, V1]
+    
+    S = {V2, V3}
+    D[V1][S] = length [V1, V2, V3, Vj]
+
+D[Vi][S] = min(j, Vj belong to S) (W[i][j] + D[Vj][S-{Vj}])
+D[Vj][phi] = w[i][phi]

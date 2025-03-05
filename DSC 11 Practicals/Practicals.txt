@@ -3,7 +3,7 @@
 3. Selection sort
 4. Quick sort
 5. Karatsuba’s integer multiplication
-    6. Strauss Martix multiplication Greedy approach
+6. Strauss Martix multiplication Greedy approach
 7. Knapsack
 8. Huffman encoding
 9. Optimal merge
@@ -12,6 +12,6 @@
 12.	Minimum spanning tree
 13.	Dijkstra’s algorithm
     14. Matrix Chain Multiplication 
-    15. Longest Common Subsequence
+15. Longest Common Subsequence
 16. Optimal Binary Search Tree
 17. Floyd Warshall Algorithm

@@ -39,15 +39,32 @@ void main()
   var g = 3; //var is used to declare a variable without specifying the datatype
   //mutable variable
   print(g);
+
   final h = 3; //final is used to declare a variable which cannot be changed
   //immutable variable
   //h = 4; //this will give an error
+  //final variable give runtime error
   print(h);
+
   const i = 3; //const is used to declare a variable which cannot be changed
   //immutable variable
   //i = 4; //this will give an error
+  //const variable give compile time error
   print(i);
   print("");
 
+  final date = DateTime.now();
+  print(date);
+  print("");
 
+  //Optional Variables
+  //Optional variables are those variables which can have a null value
+  //or String/int/double/bool value
+  String? myName = "huihuihui";
+  print(myName);
+  int? myAge = 20;
+  print(myAge);
+  print(myName.runtimeType);
+  print(myAge.runtimeType);
+  print("");
 }

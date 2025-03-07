@@ -5,6 +5,7 @@ void main()
   print("3"+"4");
   print(3+4);
   print("3"*4);
+  print("");
   //single line comment
   /*
   multi line comment
@@ -25,4 +26,10 @@ void main()
   print(d.runtimeType);
   print(e.runtimeType);
   print(f.runtimeType);
+  print("");
+  String name = "ABC";
+  print("My name is $name");
+  name = "$name DEF"; //this is string interpolation
+  print("My name is $name"); //dollar sign is used while we do string interpolation
+  print("");
 }

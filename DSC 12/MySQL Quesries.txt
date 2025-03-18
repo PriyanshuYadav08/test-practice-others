@@ -1,0 +1,69 @@
+All MySQL queries
+
+1) Query to display Employee Name, Job, Hire Date, Employee Number; for each employee with the Employee Number appearing first.
+
+SELECT eno AS "Employee Number", ename AS "Employee Name", job_type AS "Job", hire_date AS "Hire Date" 
+from employees;
+
+
+2) Query to display Unique Jobs from the Employee Table.
+
+SELECT DISTINCT job_type
+from employees;
+
+
+3) Query to display the Employee Name concatenated by a Job separated by a comma.
+
+SELECT CONCAT(ename, ', ', job_type) AS "Employee, Job"
+FROM EMPLOYEES;
+
+
+4) Query to display all the data from the Employee Table. Separate each Column by a comma and name the said column as THE_OUTPUT.
+
+SELECT CONCAT(eno, ', ', ename, ', ', job_type, ', ', COALESCE(manager, 'NULL'), ', ', hire_date, ', ', dno, ', ', 
+       COALESCE(commission, '0.00'), ', ', salary) AS THE_OUTPUT
+FROM EMPLOYEES;
+
+
+5) Query to display the Employee Name & Salary of all the employees earning more than $2850.
+
+SELECT ename AS "Employee Name", salary AS "Salary"
+FROM EMPLOYEES
+WHERE salary > 2850;
+
+
+6) Query to display Employee Name & Department Number for the Employee No= 7900.
+
+SELECT ename AS "Employee Name", dno AS "Department Number"
+FROM EMPLOYEES
+WHERE eno = 7900;
+
+
+7) Query to display Employee Name & Salary for all employees whose salary is not in the range of $1500 and $2850.
+
+SELECT ename AS "Employee Name", salary AS "Salary"
+FROM EMPLOYEES
+WHERE salary < 1500 OR salary > 2850;
+
+
+8) Query to display Employee Name, Job, and Hire Date of all the employees hired between Feb 20, 1981 and May 1, 1981. Order the query in ascending order of Start Date.
+
+SELECT ename AS "Employee Name", job_type AS "Job", hire_date AS "Hire Date"
+FROM EMPLOYEES
+WHERE hire_date BETWEEN '1981-02-20' AND '1981-05-01'
+ORDER BY hire_date ASC;
+
+
+9) Query to display Employee Name & Department No. of all the employees in Dept 10 and Dept 30 in the alphabetical order by name.
+
+SELECT ename AS "Employee Name", dno AS "Department Number"
+FROM EMPLOYEES
+WHERE dno IN (10, 30)
+ORDER BY ename ASC;
+
+
+10) Query to display Employee Name & Salary of employees who earned more than $1500 and are in Department 10 or 30.
+
+SELECT ename AS "Employee Name", salary AS "Salary"
+FROM EMPLOYEES
+WHERE salary > 1500 AND dno IN (10, 30);

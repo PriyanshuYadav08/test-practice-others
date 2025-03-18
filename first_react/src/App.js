@@ -5,7 +5,7 @@ function App(){
     let b=2;
     let c=a+b;
     return (
-        <div>
+        <>
             {/* agar html ke jaise use karna h to outside {} */}
             {/* agar javascript ke jaise use karna h to inside {} */}
             {c+3}
@@ -15,7 +15,12 @@ function App(){
                 ,color:"blue",
                 fontSize:"20px",
             }}>Welcome to my first React App</p>
-        </div>
+            <div className='second'>
+                <h1>
+                    second line check
+                </h1>
+            </div>
+        </>
     );
 }
 

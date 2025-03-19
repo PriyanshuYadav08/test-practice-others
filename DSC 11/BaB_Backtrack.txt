@@ -26,7 +26,7 @@ Solu.
 i.   calculate Pi/Wi ratio
 ii.  sort the objects in descending order of Pi/Wi ratio
 iii. at the root node, set P and W as 0
-iv.  set upper bound as P + (C-Wi).[(Pi+1)/(Wi+1)]
+iv.  set upper bound as B = P + (C-Wi).[(Pi+1)/(Wi+1)]
 
 
 Q1. 0/1 Knapsack problem using BaB
@@ -34,3 +34,7 @@ xi = [1 2 3 4]
 Pi = [40 42 25 12]
 Wi = [4 7 5 3]
 Pi/Wi = [10 6 5 4]
+C = 10
+
+//picture taken on 19/03/2025
+//picture taken on 19/03/2025

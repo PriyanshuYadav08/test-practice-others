@@ -1,0 +1,36 @@
+BRANCH AND BOUND / BACKTRACKING
+
+state space tree
+both are optimization problems
+both the strategies always give the most optimal answer if it exists
+
+Tree Pruning - we set a condition, bound, 
+
+Total permutations of a binary tree - Catalogue Number
+[(2n)C(n)]/(n+1)
+
+BaB - we set upper and lower bound (set boundries)
+    - in general, BFS traversal (Breadth First Search)
+    - minimization
+
+Criteria to stop for BaB - when a constraint is violated
+                         - we set a bound, this bound will tell us the max value
+
+Backtracking - strictly DFS traversal (Depth First Search)
+             - 0/1 Knapsack can be solved by Backtracking
+
+Q. Given a srt of objects xi, with their respective weights Wi and profits Pi.
+   Max weight carrying capapcity - W/C.
+
+Solu. 
+i.   calculate Pi/Wi ratio
+ii.  sort the objects in descending order of Pi/Wi ratio
+iii. at the root node, set P and W as 0
+iv.  set upper bound as P + (C-Wi).[(Pi+1)/(Wi+1)]
+
+
+Q1. 0/1 Knapsack problem using BaB
+xi = [1 2 3 4]
+Pi = [40 42 25 12]
+Wi = [4 7 5 3]
+Pi/Wi = [10 6 5 4]

@@ -40,3 +40,24 @@ C = 10
 //picture taken on 19/03/2025
 //picture taken on 19/03/2025
 //picture taken on 19/03/2025
+
+TYPES OF BaB
+    LIFO - stack based
+    FIFO - queue based
+    LC - least cost
+
+LIFO BaB (stack)
+Jobs = {J1, J2, J3, J4, J5, .......Jn}
+//Push and Pop
+//while expandin node, push expansions to the stack and then continue popping stack
+//picture taken on 20/03/2025
+
+FIFO BaB (queue)
+Jobs = {J1, J2, J3, J4}
+//we use Breadth First Search
+
+Example:-
+Jobs      - 1 2  3 4
+Profits   - 5 10 6 3
+Deadlines - 1 3  2 1
+Timetaken - 1 2  1 1

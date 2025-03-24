@@ -73,3 +73,9 @@ Pruning Criteria - at any node if cost > current global UB, we can kill/prune it
                    does not satisfy, DO NOT expand further
 //picture taken on 20/03/2025
 //picture taken on 20/03/2025
+
+Example:-
+Jobs      - 1  2  3  4 
+Profits   - 10 20 15 25
+Deadlines - 2  3  2  4
+Timetaken - 1  2  2  3

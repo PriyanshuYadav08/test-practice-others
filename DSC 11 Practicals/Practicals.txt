@@ -17,3 +17,4 @@
 17. Floyd Warshall Algorithm
 18. Travelling Salesman Problem
 19. 0/1 Knapsack using Branch and Bound
+20. Job Assignment using Branch and Bound

@@ -144,7 +144,9 @@ FROM EMPLOYEES;
 
 20) Query to display Name, Hire Date, and Salary Review Date which is the 1st Monday after six months of employment.
 
-SELECT ename AS "Employee Name",
-hire_date AS "Hire Date", 
-NEXT_DAY(ADD_MONTHS(hire_date, 6), 'MONDAY') AS "Salary Review Date"
+SELECT ename AS "Employee Name", 
+hire_date AS "Hire Date",
+DATE_ADD(hire_date, INTERVAL 6 MONTH) AS "Six Months Later",
+DATE_ADD(DATE_ADD(hire_date, INTERVAL 6 MONTH), 
+INTERVAL (8 - DAYOFWEEK(DATE_ADD(hire_date, INTERVAL 6 MONTH))) % 7 DAY) AS "Salary Review Date"
 FROM EMPLOYEES;

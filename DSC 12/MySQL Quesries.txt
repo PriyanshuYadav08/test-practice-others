@@ -150,3 +150,45 @@ DATE_ADD(hire_date, INTERVAL 6 MONTH) AS "Six Months Later",
 DATE_ADD(DATE_ADD(hire_date, INTERVAL 6 MONTH), 
 INTERVAL (8 - DAYOFWEEK(DATE_ADD(hire_date, INTERVAL 6 MONTH))) % 7 DAY) AS "Salary Review Date"
 FROM EMPLOYEES;
+
+21) Query to display the employees that earn a salary that is higher than the salary of any of the clerks.
+
+SELECT ename AS "Employee Name",
+salary AS "Salary"
+FROM EMPLOYEES
+WHERE salary > ANY (SELECT salary FROM EMPLOYEE WHERE job_type = 'Clerk');
+
+22) Query to display Name and calculate the number of months between today and the date each employee was hired.
+
+
+
+23) Query to display the following for each employee:-
+<E-Name> earns < Salary> monthly but wants < 3 * Current Salary >. Label the Column as Dream Salary.
+
+
+
+24) Query to display Name and Salary for all employees. Format the salary to be 15 character long, left padded with $ sign.
+
+
+
+25) Query to display Name with the 1st letter capitalized and all other letter lower case & length of their name of all the employees whose name starts with ‘J’,’A’ and ‘M’.
+
+
+
+26) Query to display Name, Hire Date and Day of the week on which the employee started.
+
+
+
+27) Query to display Name and Commission Amount. If the employee does not earn commission then use default value ‘No Commission’.
+
+
+
+28) Query to display Name, Department Name and Department No for all the employees.
+
+
+
+29) Query to display Unique Listing of all Jobs that are in Department # 30.
+
+
+
+30) Query to display Name, Department Name and Location for all employees earning a commission.

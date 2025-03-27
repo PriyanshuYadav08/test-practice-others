@@ -76,3 +76,75 @@ SELECT ename AS "Employee Name",
 salary AS "Salary"
 FROM EMPLOYEES
 WHERE salary > 1500 AND dno IN (10, 30);
+
+11) Query to display Name & Hire Date of every Employee who was hired in 1981.
+
+SELECT ename AS "Employee Name",
+hire_date AS "Hire Date"
+FROM EMPLOYEES
+WHERE EXTRACT(YEAR FROM hire_date) = 1981;
+
+12) Query to display Name & Job of all employees who don’t have a current Manager.
+
+SELECT ename AS "Employee Name",
+job_type AS "Job"
+FROM EMPLOYEES
+WHERE manager IS NULL;
+
+13) Query to display the Name, Salary & Commission for all the employees who earn commission. Sort the data in descending order of Salary and Commission.
+
+SELECT ename AS "Employee Name",
+salary AS "Salary",
+commission AS "Commission"
+FROM EMPLOYEES
+WHERE commission IS NOT NULL
+ORDER BY salary DESC, commission DESC;
+
+14) Query to display Name of all the employees where the third letter of their name is ‘A’.
+
+SELECT ename AS "Employee Name"
+FROM EMPLOYEES
+WHERE SUBSTR(ename, 3, 1) = 'A';
+
+15) Query to display Name of all employees either have two ‘R’s or have two ‘A’s in their name & are either in Dept No = 30 or their Manager’s Employee No = 7788.
+
+SELECT ename AS "Employee Name"
+FROM EMPLOYEES
+WHERE (ename LIKE '%R%R%' OR ename LIKE '%A%A%')
+AND (dno = 30 OR manager = 7788);
+
+16) Query to display Name, Job, and Salary of all employees whose Job is Clerical or Analyst & their salaries are not equal to 1000, 3000, or 5000.
+
+SELECT ename AS "Employee Name",
+job_type AS "Job",
+salary AS "Salary"
+FROM EMPLOYEES
+WHERE job_type IN ('Clerk', 'Analyst')
+AND salary NOT IN (1000, 3000, 5000);
+
+17) Query to display Name, Salary, and Commission for all employees whose Commission Amount is greater than their Salary increased by 5%.
+
+SELECT ename AS "Employee Name",
+salary AS "Salary",
+commission AS "Commission"
+FROM EMPLOYEES
+WHERE commission > salary * 1.05;
+
+18) Query to display the Current Date.
+
+SELECT CURRENT_DATE AS "Current Date";
+
+19) Query to display Employee No., Name, Salary, and the Salary increased by 15% expressed as an absolute whole number.
+
+SELECT eno AS "Employee Number",
+ename AS "Employee Name",
+salary AS "Salary", 
+ROUND(salary * 1.15) AS "Increased Salary"
+FROM EMPLOYEES;
+
+20) Query to display Name, Hire Date, and Salary Review Date which is the 1st Monday after six months of employment.
+
+SELECT ename AS "Employee Name",
+hire_date AS "Hire Date", 
+NEXT_DAY(ADD_MONTHS(hire_date, 6), 'MONDAY') AS "Salary Review Date"
+FROM EMPLOYEES;

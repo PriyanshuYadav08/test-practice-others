@@ -159,36 +159,48 @@ FROM EMPLOYEES
 WHERE salary > ANY (SELECT salary FROM EMPLOYEE WHERE job_type = 'Clerk');
 
 22) Query to display Name and calculate the number of months between today and the date each employee was hired.
+SELECT ename AS "Employee Name", 
+TIMESTAMPDIFF(MONTH, hire_date, CURDATE()) AS "Months Since Hire"
+FROM EMPLOYEES;
 
+23) Query to display <E-Name> earns <Salary> monthly but wants <3 * Current Salary>. Label as Dream Salary.
+SELECT ename, 
+CONCAT(ename, ' earns ', salary, ' monthly but wants ', salary * 3) AS "Dream Salary"
+FROM EMPLOYEES;
 
+24) Query to display Name and Salary, formatted to 15 characters long, left-padded with '$' sign.
+SELECT ename AS "Employee Name", 
+LPAD(CONCAT('$', salary), 15, '$') AS "Formatted Salary"
+FROM EMPLOYEES;
 
-23) Query to display the following for each employee:-
-<E-Name> earns < Salary> monthly but wants < 3 * Current Salary >. Label the Column as Dream Salary.
+25) Query to display Name with the 1st letter capitalized & name length, for names starting with ‘J’, ‘A’, or ‘M’.
+SELECT CONCAT(UPPER(LEFT(ename, 1)), LOWER(SUBSTRING(ename, 2))) AS "Formatted Name", 
+LENGTH(ename) AS "Name Length"
+FROM EMPLOYEES
+WHERE LEFT(ename, 1) IN ('J', 'A', 'M');
 
+26) Query to display Name, Hire Date, and Day of the week on which the employee started.
+SELECT ename AS "Employee Name", hire_date AS "Hire Date",
+DAYNAME(hire_date) AS "Day of the Week"
+FROM EMPLOYEES;
 
+27) Query to display Name and Commission Amount, defaulting to 'No Commission' if NULL.
+SELECT ename AS "Employee Name", 
+COALESCE(CONCAT('$', commission), 'No Commission') AS "Commission"
+FROM EMPLOYEES;
 
-24) Query to display Name and Salary for all employees. Format the salary to be 15 character long, left padded with $ sign.
+28) Query to display Name, Department Name, and Department No for all employees.
+SELECT e.ename AS "Employee Name", d.dname AS "Department Name", e.dno AS "Department Number"
+FROM EMPLOYEES e
+JOIN DEPARTMENT d ON e.dno = d.dno;
 
+29) Query to display a unique listing of all Jobs in Department #30.
+SELECT DISTINCT job_type AS "Job"
+FROM EMPLOYEES
+WHERE dno = 30;
 
-
-25) Query to display Name with the 1st letter capitalized and all other letter lower case & length of their name of all the employees whose name starts with ‘J’,’A’ and ‘M’.
-
-
-
-26) Query to display Name, Hire Date and Day of the week on which the employee started.
-
-
-
-27) Query to display Name and Commission Amount. If the employee does not earn commission then use default value ‘No Commission’.
-
-
-
-28) Query to display Name, Department Name and Department No for all the employees.
-
-
-
-29) Query to display Unique Listing of all Jobs that are in Department # 30.
-
-
-
-30) Query to display Name, Department Name and Location for all employees earning a commission.
+30) Query to display Name, Department Name, and Location for employees earning a commission.
+SELECT e.ename AS "Employee Name", d.dname AS "Department Name", d.location AS "Location"
+FROM EMPLOYEES e
+JOIN DEPARTMENT d ON e.dno = d.dno
+WHERE e.commission IS NOT NULL;

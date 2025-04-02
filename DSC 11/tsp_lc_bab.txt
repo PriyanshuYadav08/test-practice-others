@@ -9,4 +9,3 @@ TRAVELLING SALESMAN PROBLEM with LEAST COST BRANCH AND Bound
 - first we have to reduce all the rows, then columns
 
 C(i,j) = C(i,j) + rc + (modified_rc)
-

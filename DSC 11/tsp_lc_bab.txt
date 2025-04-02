@@ -1,0 +1,12 @@
+TRAVELLING SALESMAN PROBLEM with LEAST COST BRANCH AND Bound
+
+- every vertex exactly once
+- return to starting position
+
+- set starting UB as INF
+- set starting LB as reduction()
+
+- first we have to reduce all the rows, then columns
+
+C(i,j) = C(i,j) + rc + (modified_rc)
+

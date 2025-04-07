@@ -200,7 +200,9 @@ FROM EMPLOYEES
 WHERE dno = 30;
 
 30) Query to display Name, Department Name, and Location for employees earning a commission.
-SELECT e.ename AS "Employee Name", d.dname AS "Department Name", d.location AS "Location"
+SELECT e.ename AS "Employee Name",
+d.dname AS "Department Name",
+d.location AS "Location"
 FROM EMPLOYEES e
 JOIN DEPARTMENT d ON e.dno = d.dno
 WHERE e.commission IS NOT NULL;

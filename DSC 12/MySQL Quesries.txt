@@ -159,50 +159,213 @@ FROM EMPLOYEES
 WHERE salary > ANY (SELECT salary FROM EMPLOYEE WHERE job_type = 'Clerk');
 
 22) Query to display Name and calculate the number of months between today and the date each employee was hired.
+
 SELECT ename AS "Employee Name", 
 TIMESTAMPDIFF(MONTH, hire_date, CURDATE()) AS "Months Since Hire"
 FROM EMPLOYEES;
 
 23) Query to display <E-Name> earns <Salary> monthly but wants <3 * Current Salary>. Label as Dream Salary.
+
 SELECT ename, 
 CONCAT(ename, ' earns ', salary, ' monthly but wants ', salary * 3) AS "Dream Salary"
 FROM EMPLOYEES;
 
 24) Query to display Name and Salary, formatted to 15 characters long, left-padded with '$' sign.
+
 SELECT ename AS "Employee Name", 
 LPAD(CONCAT('$', salary), 15, '$') AS "Formatted Salary"
 FROM EMPLOYEES;
 
 25) Query to display Name with the 1st letter capitalized & name length, for names starting with ‘J’, ‘A’, or ‘M’.
+
 SELECT CONCAT(UPPER(LEFT(ename, 1)), LOWER(SUBSTRING(ename, 2))) AS "Formatted Name", 
 LENGTH(ename) AS "Name Length"
 FROM EMPLOYEES
 WHERE LEFT(ename, 1) IN ('J', 'A', 'M');
 
 26) Query to display Name, Hire Date, and Day of the week on which the employee started.
+
 SELECT ename AS "Employee Name", hire_date AS "Hire Date",
 DAYNAME(hire_date) AS "Day of the Week"
 FROM EMPLOYEES;
 
 27) Query to display Name and Commission Amount, defaulting to 'No Commission' if NULL.
+
 SELECT ename AS "Employee Name", 
 COALESCE(CONCAT('$', commission), 'No Commission') AS "Commission"
 FROM EMPLOYEES;
 
 28) Query to display Name, Department Name, and Department No for all employees.
+
 SELECT e.ename AS "Employee Name", d.dname AS "Department Name", e.dno AS "Department Number"
 FROM EMPLOYEES e
 JOIN DEPARTMENT d ON e.dno = d.dno;
 
 29) Query to display a unique listing of all Jobs in Department #30.
+
 SELECT DISTINCT job_type AS "Job"
 FROM EMPLOYEES
 WHERE dno = 30;
 
 30) Query to display Name, Department Name, and Location for employees earning a commission.
+
 SELECT e.ename AS "Employee Name",
 d.dname AS "Department Name",
 d.location AS "Location"
 FROM EMPLOYEES e
 JOIN DEPARTMENT d ON e.dno = d.dno
 WHERE e.commission IS NOT NULL;
+
+31) Employees with 'A' in their name
+
+SELECT ename, dname
+FROM EMPLOYEES e
+JOIN DEPARTMENT d ON e.dno = d.dno
+WHERE ename LIKE '%A%';
+
+32) Employees working in Dallas
+
+SELECT ename, job_type, e.dno, d.dname
+FROM EMPLOYEES e
+JOIN DEPARTMENT d ON e.dno = d.dno
+WHERE d.location = 'DALLAS';
+
+33) Employee and their Manager
+
+SELECT e.ename AS "Employee Name", e.eno, 
+       m.ename AS "Manager Name", m.eno AS "Manager No"
+FROM EMPLOYEES e
+LEFT JOIN EMPLOYEES m ON e.mgr = m.eno;
+
+34) Including employees without manager
+
+SELECT e.ename AS "Employee Name", e.eno,
+       COALESCE(m.ename, 'No Manager') AS "Manager Name", 
+       COALESCE(m.empno, '---') AS "Manager No"
+FROM EMPLOYEES e
+LEFT JOIN EMPLOYEES m ON e.mgr = m.eno;
+
+35) Employees with salary > avg salary and in dept with someone with 'T' in name
+SELECT eno, ename, salary
+FROM EMPLOYEES
+WHERE salary > (SELECT AVG(salary) FROM EMPLOYEES)
+AND dno IN (
+    SELECT DISTINCT dno FROM EMPLOYEES WHERE ename LIKE '%T%'
+);
+
+36) Employees with matching dept and salary of someone who earns commission
+
+SELECT ename, dno, salary
+FROM EMPLOYEES
+WHERE (dno, salary) IN (
+    SELECT dno, salary FROM EMPLOYEES WHERE commission IS NOT NULL
+);
+
+37) Employees hired after Blake
+
+SELECT ename, hire_date
+FROM EMPLOYEES
+WHERE hire_date > (
+    SELECT hire_date FROM EMPLOYEES WHERE ename = 'BLAKE'
+);
+
+38) Employees hired before their manager
+
+SELECT e.ename AS "Employee", e.hire_date AS "Emp Hire Date",
+       m.ename AS "Manager", m.hire_date AS "Mgr Hire Date"
+FROM EMPLOYEES e
+JOIN EMPLOYEES m ON e.mgr = m.eno
+WHERE e.hire_date < m.hire_date;
+
+39) Salary as asterisks
+
+SELECT ename, 
+       REPEAT('*', salary DIV 100) AS "Salary in *"
+FROM EMPLOYEES;
+
+40) Salary stats: max, min, sum, avg
+
+SELECT MAX(salary) AS "Highest", MIN(salary) AS "Lowest",
+       SUM(salary) AS "Total", AVG(salary) AS "Average"
+FROM EMPLOYEES;
+41) Salary stats per job
+
+SELECT job_type, 
+       MAX(salary) AS "Max", MIN(salary) AS "Min",
+       SUM(salary) AS "Total", AVG(salary) AS "Avg"
+FROM EMPLOYEES
+GROUP BY job_type;
+
+42) Count of employees by job
+
+SELECT job_type, COUNT(*) AS "No. of Employees"
+FROM EMPLOYEES
+GROUP BY job_type;
+
+43) Number of managers (excluding duplicates)
+
+SELECT COUNT(DISTINCT mgr) AS "No. of Managers"
+FROM EMPLOYEES
+WHERE mgr IS NOT NULL;
+
+44) Difference between highest and lowest salary
+
+SELECT MAX(salary) - MIN(salary) AS "Salary Range"
+FROM EMPLOYEES;
+
+45) Lowest paid employee per manager (min salary >= 1000)
+
+SELECT mgr, MIN(salary) AS "Lowest Salary"
+FROM EMPLOYEES
+WHERE mgr IS NOT NULL
+GROUP BY mgr
+HAVING MIN(salary) >= 1000;
+
+46) Department name, location, count, avg salary
+
+SELECT d.dname, d.location, COUNT(e.eno) AS "Total Employees", 
+       AVG(e.salary) AS "Avg Salary"
+FROM EMPLOYEES e
+JOIN DEPARTMENT d ON e.dno = d.dno
+GROUP BY d.dname, d.location;
+
+47) Employees in same dept as Blake
+
+SELECT ename, hire_date
+FROM EMPLOYEES
+WHERE dno = (SELECT dno FROM EMPLOYEES WHERE ename = 'BLAKE');
+
+48) Employees earning more than avg salary
+
+SELECT eno, ename
+FROM EMPLOYEES
+WHERE salary > (SELECT AVG(salary) FROM EMPLOYEES);
+
+49) Employees in dept with someone whose name has 'T'
+
+SELECT eno, ename
+FROM EMPLOYEES
+WHERE dno IN (
+    SELECT DISTINCT dno FROM EMPLOYEES WHERE ename LIKE '%T%'
+
+
+50) Employees reporting to King
+
+SELECT ename, salary
+FROM EMPLOYEES
+WHERE mgr = (SELECT empno FROM EMPLOYEES WHERE ename = 'KING');
+
+51) Sales Dept employees
+
+SELECT d.dno, d.dname, e.job_type
+FROM EMPLOYEES e
+JOIN DEPARTMENT d ON e.dno = d.dno
+WHERE d.dname = 'SALES';
+
+52) Managers earning more than avg salary of their department
+
+SELECT DISTINCT m.ename AS "Manager"
+FROM EMPLOYEES e
+JOIN EMPLOYEES m ON e.mgr = m.eno
+GROUP BY m.eno, m.ename
+HAVING m.salary > AVG(e.salary);

@@ -199,7 +199,7 @@ FROM EMPLOYEES;
 
 SELECT e.ename AS "Employee Name", d.dname AS "Department Name", e.dno AS "Department Number"
 FROM EMPLOYEES e
-JOIN DEPARTMENT d ON e.dno = d.dno;
+JOIN dept d ON e.dno = d.dno;
 
 29) Query to display a unique listing of all Jobs in Department #30.
 
@@ -213,21 +213,21 @@ SELECT e.ename AS "Employee Name",
 d.dname AS "Department Name",
 d.location AS "Location"
 FROM EMPLOYEES e
-JOIN DEPARTMENT d ON e.dno = d.dno
+JOIN dept d ON e.dno = d.dno
 WHERE e.commission IS NOT NULL;
 
 31) Employees with 'A' in their name
 
 SELECT ename, dname
 FROM EMPLOYEES e
-JOIN DEPARTMENT d ON e.dno = d.dno
+JOIN dept d ON e.dno = d.dno
 WHERE ename LIKE '%A%';
 
 32) Employees working in Dallas
 
 SELECT ename, job_type, e.dno, d.dname
 FROM EMPLOYEES e
-JOIN DEPARTMENT d ON e.dno = d.dno
+JOIN dept d ON e.dno = d.dno
 WHERE d.location = 'DALLAS';
 
 33) Employee and their Manager
@@ -235,17 +235,18 @@ WHERE d.location = 'DALLAS';
 SELECT e.ename AS "Employee Name", e.eno, 
        m.ename AS "Manager Name", m.eno AS "Manager No"
 FROM EMPLOYEES e
-LEFT JOIN EMPLOYEES m ON e.mgr = m.eno;
+LEFT JOIN EMPLOYEES m ON e.manager = m.eno;
 
 34) Including employees without manager
 
 SELECT e.ename AS "Employee Name", e.eno,
        COALESCE(m.ename, 'No Manager') AS "Manager Name", 
-       COALESCE(m.empno, '---') AS "Manager No"
+       COALESCE(m.eno, '---') AS "Manager No"
 FROM EMPLOYEES e
-LEFT JOIN EMPLOYEES m ON e.mgr = m.eno;
+LEFT JOIN EMPLOYEES m ON e.manager = m.eno;
 
 35) Employees with salary > avg salary and in dept with someone with 'T' in name
+
 SELECT eno, ename, salary
 FROM EMPLOYEES
 WHERE salary > (SELECT AVG(salary) FROM EMPLOYEES)
@@ -274,13 +275,13 @@ WHERE hire_date > (
 SELECT e.ename AS "Employee", e.hire_date AS "Emp Hire Date",
        m.ename AS "Manager", m.hire_date AS "Mgr Hire Date"
 FROM EMPLOYEES e
-JOIN EMPLOYEES m ON e.mgr = m.eno
+JOIN EMPLOYEES m ON e.manager = m.eno
 WHERE e.hire_date < m.hire_date;
 
 39) Salary as asterisks
 
 SELECT ename, 
-       REPEAT('*', salary DIV 100) AS "Salary in *"
+REPEAT('*', salary DIV 100) AS "Salary in *"
 FROM EMPLOYEES;
 
 40) Salary stats: max, min, sum, avg
@@ -288,6 +289,7 @@ FROM EMPLOYEES;
 SELECT MAX(salary) AS "Highest", MIN(salary) AS "Lowest",
        SUM(salary) AS "Total", AVG(salary) AS "Average"
 FROM EMPLOYEES;
+
 41) Salary stats per job
 
 SELECT job_type, 
@@ -304,9 +306,9 @@ GROUP BY job_type;
 
 43) Number of managers (excluding duplicates)
 
-SELECT COUNT(DISTINCT mgr) AS "No. of Managers"
+SELECT COUNT(DISTINCT manager) AS "No. of Managers"
 FROM EMPLOYEES
-WHERE mgr IS NOT NULL;
+WHERE manager IS NOT NULL;
 
 44) Difference between highest and lowest salary
 
@@ -315,10 +317,10 @@ FROM EMPLOYEES;
 
 45) Lowest paid employee per manager (min salary >= 1000)
 
-SELECT mgr, MIN(salary) AS "Lowest Salary"
+SELECT manager, MIN(salary) AS "Lowest Salary"
 FROM EMPLOYEES
-WHERE mgr IS NOT NULL
-GROUP BY mgr
+WHERE manager IS NOT NULL
+GROUP BY manager
 HAVING MIN(salary) >= 1000;
 
 46) Department name, location, count, avg salary
@@ -326,7 +328,7 @@ HAVING MIN(salary) >= 1000;
 SELECT d.dname, d.location, COUNT(e.eno) AS "Total Employees", 
        AVG(e.salary) AS "Avg Salary"
 FROM EMPLOYEES e
-JOIN DEPARTMENT d ON e.dno = d.dno
+JOIN dept d ON e.dno = d.dno
 GROUP BY d.dname, d.location;
 
 47) Employees in same dept as Blake
@@ -353,19 +355,22 @@ WHERE dno IN (
 
 SELECT ename, salary
 FROM EMPLOYEES
-WHERE mgr = (SELECT empno FROM EMPLOYEES WHERE ename = 'KING');
+WHERE manager = (SELECT eno FROM EMPLOYEES WHERE ename = 'KING');
 
 51) Sales Dept employees
 
 SELECT d.dno, d.dname, e.job_type
 FROM EMPLOYEES e
-JOIN DEPARTMENT d ON e.dno = d.dno
+JOIN dept d ON e.dno = d.dno
 WHERE d.dname = 'SALES';
 
 52) Managers earning more than avg salary of their department
 
-SELECT DISTINCT m.ename AS "Manager"
+SELECT DISTINCT m.ename AS "Manager Name", m.salary AS "Manager Salary"
 FROM EMPLOYEES e
-JOIN EMPLOYEES m ON e.mgr = m.eno
-GROUP BY m.eno, m.ename
-HAVING m.salary > AVG(e.salary);
+JOIN EMPLOYEES m ON e.manager = m.eno
+WHERE m.salary > (
+    SELECT AVG(salary)
+    FROM EMPLOYEES e2
+    WHERE e2.dno = e.dno
+);

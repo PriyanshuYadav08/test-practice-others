@@ -348,7 +348,7 @@ WHERE salary > (SELECT AVG(salary) FROM EMPLOYEES);
 SELECT eno, ename
 FROM EMPLOYEES
 WHERE dno IN (
-    SELECT DISTINCT dno FROM EMPLOYEES WHERE ename LIKE '%T%'
+    SELECT DISTINCT dno FROM EMPLOYEES WHERE ename LIKE '%T%');
 
 
 50) Employees reporting to King

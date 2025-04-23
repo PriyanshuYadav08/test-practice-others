@@ -1,0 +1,33 @@
+COMPLEXITY CLASSES
+- P
+- NP
+- NP Complete
+- Co-NP
+- NP Hard
+- NP Easy
+
+
+P Class
+- if a problem is verifiable and solvable in polynomial time, it is a P Class problem
+- Multiplication, Sorting, Searching problems
+
+
+NP Class
+- if a problem is verifiable and not solvable in polynomial time, it is a NP Class problem
+- TSP
+
+
+NP Hard
+- if a problem is solvable in more than polynomial time, it is a NP Hard problem
+
+
+NP Easy
+- if a problem is solvable in lesser time than polynomial time, it is a NP Easy problem
+
+
+NP Complete
+- consists of those problems which are either unsolvable or time requred to solve is very large compared to polynomial time
+
+
+Co-NP
+- if problem and its complement are in NP Class, it is Co-NP Class

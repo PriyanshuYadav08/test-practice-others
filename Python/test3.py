@@ -1,13 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Set seed for reproducibility
 np.random.seed(42)
 
-# Number of simulations
 n_simulations = 10000
 
-# Define bridge components with mean and std dev for load and strength
 components = {
     "Girder": {
         "load_mean": 100, "load_std": 15,
@@ -23,10 +20,8 @@ components = {
     }
 }
 
-# Store failure results
 component_results = {}
 
-# Run simulation for each component
 for name, data in components.items():
     load = np.random.normal(data["load_mean"], data["load_std"], n_simulations)
     strength = np.random.normal(data["strength_mean"], data["strength_std"], n_simulations)
@@ -41,13 +36,11 @@ for name, data in components.items():
         "margin": strength - load
     }
 
-# Calculate system-level failure (series system: any component fails)
 system_failures = np.zeros(n_simulations, dtype=bool)
 for comp in component_results.values():
     system_failures |= (comp["load"] > comp["strength"])
 system_pf = np.sum(system_failures) / n_simulations
 
-# Prepare output summary
 output_summary = {
     "Component Failure Probabilities": {name: round(res["pf"], 4) for name, res in component_results.items()},
     "System Failure Probability": round(system_pf, 4)

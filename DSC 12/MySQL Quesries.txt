@@ -38,7 +38,7 @@ WHERE salary > 2850;
 SELECT ename AS "Employee Name",
 dno AS "Department Number"
 FROM EMPLOYEES
-WHERE eno = 7900;
+WHERE eno = 790;
 
 
 7) Query to display Employee Name & Salary for all employees whose salary is not in the range of $1500 and $2850.
@@ -154,7 +154,7 @@ FROM EMPLOYEES;
 SELECT ename AS "Employee Name",
 salary AS "Salary"
 FROM EMPLOYEES
-WHERE salary > ANY (SELECT salary FROM EMPLOYEE WHERE job_type = 'Clerk');
+WHERE salary > ANY (SELECT salary FROM EMPLOYEES WHERE job_type = 'Clerk');
 
 22) Query to display Name and calculate the number of months between today and the date each employee was hired.
 

@@ -1,5 +1,3 @@
-All MySQL queries
-
 1) Query to display Employee Name, Job, Hire Date, Employee Number; for each employee with the Employee Number appearing first.
 
 SELECT eno AS "Employee Number", 

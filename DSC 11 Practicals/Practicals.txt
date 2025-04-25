@@ -19,3 +19,5 @@
 19. 0/1 Knapsack using Branch and Bound
 20. Job Assignment using Branch and Bound
 21. Travelling Salesman Problem with Least Cost Branch and Bound
+22. N Queens Problem
+23. AVL Tree

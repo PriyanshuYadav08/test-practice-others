@@ -12,7 +12,7 @@ int optimalBST(vector<int>& keys, vector<int>& freq, int n) {
 
     // L is the chain length
     for (int L = 2; L <= n; L++) {
-        for (int i = 0; i <= n - L + 1; i++) {
+        for (int i = 0; i <= n - L; i++) {
             int j = i + L - 1;
             cost[i][j] = INT_MAX;
 

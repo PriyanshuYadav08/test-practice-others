@@ -1,4 +1,40 @@
 DSC 15 SOFTWARE ENGINEERING NOTES
 
+- Software Enginerring is the art and science of planning and leading software projects.
+- It is a sub-disvilpine of project managemnet in which software projects are planned, implemented, monitored and controlled.
+
+
 1. What is the difference bewteen Project, Process and Software?
--  
+
+- Project - A temporary endeavor with a specific goal, timeline, and resources to deliver a unique product or result (e.g., developing a new software application).
+          - A project should have a deadline (start and end date).
+          - Well defined task with a starting and ending and ends when its goal is achieved hence it is a temporarrary phase in the lifetime of an organization.
+          - It may unique and distinct goal and it is not a routine activity or day-to-day operations.
+          - It needs adequate resources in terms of time, manpower, finance, material and knowledge-bank.
+
+- Process - A set of structured activities or steps followed to achieve a task, often used to manage and control software development (e.g., Agile, Waterfall).
+
+- Software - The final product or set of programs and related data that perform specific tasks for users or systems.
+
+
+2. It is an essential part of s/w orf to deliver quality product keeping the cost within client;s budget constrain and deliver the project as per scheduled.
+- SE is essential to incorporate user requirements along with budget and time constraints.
+
+
+3. Software Project Manager
+- A person who undertakes the reponsibility of executing the project; he/she is thoroughly aware of all the phases of SDLC.
+- May never directly involve in producing the end product but controls and manages the activites involved in production.
+- Closely monitors the development process, prepares and executes various plans, arranges necessary and adequate resources, time, quality and customer satisfaction.
+- Resposibility of PM -
+    - Managing people
+        - acts as project leader
+        - lesion with stakeholders
+        - managing human resources
+        - setting up reporting hierarchy
+    - Managing project
+        - defingin and setting up proejct scope
+        - managing project management activities
+        - monitoring progress and performance
+        - risk analysis at every phase
+        - take nesessary step to avoid or come out of problems
+        - act as project spokesperson

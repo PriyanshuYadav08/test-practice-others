@@ -1,0 +1,4 @@
+DSC 15 SOFTWARE ENGINEERING NOTES
+
+1. What is the difference bewteen Project, Process and Software?
+-  

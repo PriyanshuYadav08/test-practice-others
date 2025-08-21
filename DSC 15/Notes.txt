@@ -76,3 +76,19 @@ Software:
     - under-estimation of required time and resources
     - technological changes, environmental changes and business competition
     - Processes - Identification, Categorize, Manage, Monitor
+
+10. Project Communication Management
+    - Planning, Sharing, Feedback, Closure
+
+11. Configuration Management
+    - it tracks and controls the changes in software in terms of requirements, design, functions and development of the product
+    - baseline - measurement that define completeness of a phase
+
+12. Change Control
+    - Identification, Validation, Analysis, Control, Execution, Close request
+
+13. Project Management Tools
+    - Gantt chart - timeline chart
+    - Pert chart - network diagram
+    - Resources histogram - staff planning and coordination
+    - Critical path analysis - interdependent tasks

@@ -100,3 +100,7 @@ Software:
     - Non-functional Requirements
     - Interface Requirements
     - Performance Requirements
+    - Design Constraints (constrain on a particular feature; not in the design phase)
+    - Functional and non-functional attributes
+    - Prelim Schedule and Budget
+    - Customer Feedback

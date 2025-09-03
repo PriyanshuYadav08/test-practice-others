@@ -92,3 +92,11 @@ Software:
     - Pert chart - network diagram
     - Resources histogram - staff planning and coordination
     - Critical path analysis - interdependent tasks
+
+14. System Requirement Statement (SRS)
+    - Problem Statement
+    - Scope Document
+    - Functional Requirements
+    - Non-functional Requirements
+    - Interface Requirements
+    - Performance Requirements

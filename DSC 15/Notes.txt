@@ -104,3 +104,27 @@ Software:
     - Functional and non-functional attributes
     - Prelim Schedule and Budget
     - Customer Feedback
+
+15. Project Management Maturity (Dr. Kerzner's 16 points)
+    - adopt a project management methodology and use it consistently
+    - implement a philosophy that drives the company towards project management maturity and communicate it to everyone
+    - commit to developing effective plans at the beginning of each project
+    - minimise the cope changes by commiting to realistic objectives
+    - recognize that cost and scheduled management are inseparable
+    - select the right person as the project manager
+    - provide executive with project sponser information, not project management information
+    - strengthen involvement and supportof line management
+    - focus on deliverables rather than resources
+    - clutivate effective Communication, cooperation and trust to achieve rapid project management maturity
+    - share recognition for project success with the entire project team and line management
+    - eliminate nonproductive meetings
+    - focus on idenitying and solving poroblems early, quickly and cost effectively
+    - measure progress periodically
+    - use project management software as a tool - not a subsitute of effective planning
+    - institute an all-employe training program with periodic updates based upon document lessons learned
+
+16. Product v/s Project management
+
+17. Maturity and Excellence in Project
+    - Maturite in project management is the implement of a standard methodology and accompanying processes such that there exits a high likelihood of reputed successes
+    - Orgss excellent in project management are those that create the environment in which there exists a continuous steam of successfully managed project and where success is measured by what is in the best interest of both the company and the project (the customer)

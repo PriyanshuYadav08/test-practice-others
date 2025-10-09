@@ -128,3 +128,39 @@ Software:
 17. Maturity and Excellence in Project
     - Maturite in project management is the implement of a standard methodology and accompanying processes such that there exits a high likelihood of reputed successes
     - Orgss excellent in project management are those that create the environment in which there exists a continuous steam of successfully managed project and where success is measured by what is in the best interest of both the company and the project (the customer)
+
+18. Software Metric
+    - its a quantitative measure of an attribute a software system posses with respect to cost, quality, size and schedule
+    - measure - no of errors
+    - metrics - no of errors found per person
+
+19. Cyclometric Complexity
+    - software metric used to measure the complexity of a program
+    - measure independent paths through program source code
+    - independent path is defined as the path that has at least one ddge which has not been transversed before in any other paths.
+    - can be calculated with respect to functions, modules, methods or classes within a program
+    - Nodes represent task, lines represent path
+    - Complexity = V(G) = E - N + 2
+        - E - number of edges
+        - N - number of nodes
+    - V(G) = P + I
+        - P - number of predicate nodes
+
+20. Use of Cyclometric Complexity
+    - determining the independent path executions thus proven to be very helpful for develops and testers
+    - it can make sure that every path has been tested at least once
+    - thus help to focus more on uncovered paths
+    - code coverage can be improved
+    - risks associated with the program can be evaluated
+    - these metrics being used earlier in the program help in reducing the risks
+
+21. Advantages of Cyclometric Complexity
+    - quality metric, given the relative complexity of various design
+    - it is used to measure the minimum efforts and best areas of concentration for testing
+    - it is able to guide the testing process
+    - it is easy to apply
+
+22. Disadvantages of Cyclometric Complexity
+    - measure the program's control complexity and not the data complexity
+    - nested conditions structure are harder to understand then non neste structure
+    - in the case of simple comparisons and decision structures, it may givec a misleading figure

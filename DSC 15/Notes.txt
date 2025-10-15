@@ -164,3 +164,11 @@ Software:
     - measure the program's control complexity and not the data complexity
     - nested conditions structure are harder to understand then non neste structure
     - in the case of simple comparisons and decision structures, it may givec a misleading figure
+
+23. Test Case
+    - smallest unit of the testing plan
+    - includes a description of necessary actions and parameters to achieve and verify the expected behaviour of a particular function or the part of the tested software
+    - scenarios - user logged in, upload photos, upload button, select photos, upload them, etc
+
+24. Basic Path Testing (White Box Testing)
+    - guarantees to execute at least one statement during testing

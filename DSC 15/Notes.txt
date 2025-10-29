@@ -170,5 +170,14 @@ Software:
     - includes a description of necessary actions and parameters to achieve and verify the expected behaviour of a particular function or the part of the tested software
     - scenarios - user logged in, upload photos, upload button, select photos, upload them, etc
 
-24. Basic Path Testing (White Box Testing)
-    - guarantees to execute at least one statement during testing
+24. Deployment/Maintenance Phase
+    - Escalation - given warning is ignored
+    - It is a negative sign for any employee
+    - Memo
+        - Logo, Company Name
+        - Project ID and Name
+        - To (cc)
+        - From
+        - Subject
+        - Body
+    - Firing

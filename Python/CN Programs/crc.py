@@ -1,5 +1,3 @@
-# ----- SAFE CRC IMPLEMENTATION -----
-
 def xor(a, b):
     """Perform XOR between two binary strings of equal length."""
     result = ""

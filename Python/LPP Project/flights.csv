@@ -1,0 +1,21 @@
+Flight_ID,Airline,Type,Scheduled,Early,Late,Priority,Size,Cost,Gap
+AI101,Air India,Landing,5,0,15,1,Medium,5.0,2
+6E202,IndiGo,Takeoff,8,3,18,2,Small,4.0,1
+UK301,Vistara,Landing,12,5,22,3,Large,6.0,3
+VTI404,Vistara,Takeoff,15,10,25,2,Small,4.5,1
+G8205,GoAir,Landing,18,10,28,2,Medium,5.0,2
+AI106,Air India,Landing,20,12,32,1,Large,6.5,3
+6E209,IndiGo,Takeoff,22,15,35,3,Small,3.5,1
+UK310,Vistara,Landing,25,18,38,2,Medium,5.0,2
+G8210,GoAir,Takeoff,28,20,40,2,Small,4.0,1
+AI112,Air India,Landing,30,22,45,1,Large,7.0,3
+6E215,IndiGo,Takeoff,33,25,48,3,Small,3.0,1
+UK318,Vistara,Landing,35,27,50,2,Medium,5.0,2
+G8218,GoAir,Takeoff,38,30,53,2,Small,4.0,1
+AI120,Air India,Landing,40,30,55,1,Large,6.5,3
+6E223,IndiGo,Takeoff,42,32,57,3,Small,3.5,1
+UK325,Vistara,Landing,44,34,58,2,Medium,5.0,2
+G8225,GoAir,Takeoff,46,36,59,2,Small,4.0,1
+AI128,Air India,Landing,48,38,59,1,Large,7.0,3
+6E230,IndiGo,Takeoff,50,40,59,3,Small,3.0,1
+UK332,Vistara,Landing,52,42,59,2,Medium,5.0,2

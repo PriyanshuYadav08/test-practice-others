@@ -1,0 +1,136 @@
+Flight_ID,Airline,Type,Scheduled,Early,Late,Priority,Aircraft_Class,Gap,Cost
+AI101,Air India,Landing,12,2,27,1,Narrow,2,4.8
+6E201,IndiGo,Takeoff,18,8,33,2,Narrow,2,3.6
+UK301,Vistara,Landing,25,15,40,3,Wide,3,5.7
+SG401,SpiceJet,Takeoff,31,21,46,2,Narrow,2,3.2
+G8101,GoAir,Landing,38,28,53,3,Narrow,2,4.1
+AI103,Air India,Takeoff,44,34,59,1,Wide,3,6.9
+I5201,AirAsia,Landing,49,39,64,2,Narrow,2,3.9
+QP501,Akasa,Takeoff,56,46,71,3,Narrow,2,3.4
+AI105,Air India,Landing,63,53,78,1,Wide,3,6.2
+6E203,IndiGo,Takeoff,70,60,85,2,Narrow,2,3.1
+UK303,Vistara,Landing,76,66,91,3,Wide,3,5.4
+SG403,SpiceJet,Takeoff,82,72,97,2,Narrow,2,3.7
+G8103,GoAir,Landing,88,78,103,3,Narrow,2,4.0
+AI107,Air India,Takeoff,94,84,109,1,Super,5,8.3
+I5203,AirAsia,Landing,101,91,116,2,Narrow,2,3.6
+QP503,Akasa,Takeoff,108,98,123,3,Narrow,2,3.2
+AI109,Air India,Landing,115,105,130,1,Wide,3,6.5
+6E205,IndiGo,Takeoff,121,111,136,2,Narrow,2,3.3
+UK305,Vistara,Landing,128,118,143,3,Wide,3,5.1
+SG405,SpiceJet,Takeoff,134,124,149,2,Narrow,2,3.5
+G8105,GoAir,Landing,141,131,156,3,Narrow,2,4.2
+AI111,Air India,Takeoff,148,138,163,1,Super,4,8.0
+I5205,AirAsia,Landing,154,144,169,2,Narrow,2,3.8
+QP505,Akasa,Takeoff,160,150,175,3,Narrow,2,3.1
+AI113,Air India,Landing,168,158,183,1,Wide,3,6.7
+6E207,IndiGo,Takeoff,175,165,190,2,Narrow,2,3.4
+UK307,Vistara,Landing,181,171,196,3,Wide,3,5.3
+SG407,SpiceJet,Takeoff,188,178,203,2,Narrow,2,3.6
+G8107,GoAir,Landing,195,185,210,3,Narrow,2,4.0
+AI115,Air India,Takeoff,202,192,217,1,Super,5,8.1
+I5207,AirAsia,Landing,209,199,224,2,Narrow,2,3.7
+QP507,Akasa,Takeoff,216,206,231,3,Narrow,2,3.3
+AI117,Air India,Landing,223,213,238,1,Wide,3,6.4
+6E209,IndiGo,Takeoff,230,220,245,2,Narrow,2,3.5
+UK309,Vistara,Landing,237,227,252,3,Wide,3,5.6
+SG409,SpiceJet,Takeoff,243,233,258,2,Narrow,2,3.2
+G8109,GoAir,Landing,250,240,265,3,Narrow,2,4.2
+AI119,Air India,Takeoff,257,247,272,1,Super,4,8.4
+I5209,AirAsia,Landing,264,254,279,2,Narrow,2,3.9
+QP509,Akasa,Takeoff,271,261,286,3,Narrow,2,3.3
+AI121,Air India,Landing,278,268,293,1,Wide,3,6.8
+6E211,IndiGo,Takeoff,285,275,300,2,Narrow,2,3.4
+UK311,Vistara,Landing,291,281,306,3,Wide,3,5.7
+SG411,SpiceJet,Takeoff,298,288,313,2,Narrow,2,3.6
+G8111,GoAir,Landing,305,295,320,3,Narrow,2,4.1
+AI123,Air India,Takeoff,311,301,326,1,Super,5,8.2
+I5211,AirAsia,Landing,318,308,333,2,Narrow,2,3.8
+QP511,Akasa,Takeoff,324,314,339,3,Narrow,2,3.4
+Flight_ID,Airline,Type,Scheduled,Early,Late,Priority,Aircraft_Class,Gap,Cost
+AI101,Air India,Landing,12,2,27,1,Narrow,2,4.8
+6E201,IndiGo,Takeoff,18,8,33,2,Narrow,2,3.6
+UK301,Vistara,Landing,25,15,40,3,Wide,3,5.7
+SG401,SpiceJet,Takeoff,31,21,46,2,Narrow,2,3.2
+G8101,GoAir,Landing,38,28,53,3,Narrow,2,4.1
+AI103,Air India,Takeoff,44,34,59,1,Wide,3,6.9
+I5201,AirAsia,Landing,49,39,64,2,Narrow,2,3.9
+QP501,Akasa,Takeoff,56,46,71,3,Narrow,2,3.4
+AI105,Air India,Landing,63,53,78,1,Wide,3,6.2
+6E203,IndiGo,Takeoff,70,60,85,2,Narrow,2,3.1
+UK303,Vistara,Landing,76,66,91,3,Wide,3,5.4
+SG403,SpiceJet,Takeoff,82,72,97,2,Narrow,2,3.7
+G8103,GoAir,Landing,88,78,103,3,Narrow,2,4.0
+AI107,Air India,Takeoff,94,84,109,1,Super,5,8.3
+I5203,AirAsia,Landing,101,91,116,2,Narrow,2,3.6
+QP503,Akasa,Takeoff,108,98,123,3,Narrow,2,3.2
+AI109,Air India,Landing,115,105,130,1,Wide,3,6.5
+6E205,IndiGo,Takeoff,121,111,136,2,Narrow,2,3.3
+UK305,Vistara,Landing,128,118,143,3,Wide,3,5.1
+SG405,SpiceJet,Takeoff,134,124,149,2,Narrow,2,3.5
+G8105,GoAir,Landing,141,131,156,3,Narrow,2,4.2
+AI111,Air India,Takeoff,148,138,163,1,Super,4,8.0
+I5205,AirAsia,Landing,154,144,169,2,Narrow,2,3.8
+QP505,Akasa,Takeoff,160,150,175,3,Narrow,2,3.1
+AI113,Air India,Landing,168,158,183,1,Wide,3,6.7
+6E207,IndiGo,Takeoff,175,165,190,2,Narrow,2,3.4
+UK307,Vistara,Landing,181,171,196,3,Wide,3,5.3
+SG407,SpiceJet,Takeoff,188,178,203,2,Narrow,2,3.6
+G8107,GoAir,Landing,195,185,210,3,Narrow,2,4.0
+AI115,Air India,Takeoff,202,192,217,1,Super,5,8.1
+I5207,AirAsia,Landing,209,199,224,2,Narrow,2,3.7
+QP507,Akasa,Takeoff,216,206,231,3,Narrow,2,3.3
+AI117,Air India,Landing,223,213,238,1,Wide,3,6.4
+6E209,IndiGo,Takeoff,230,220,245,2,Narrow,2,3.5
+UK309,Vistara,Landing,237,227,252,3,Wide,3,5.6
+SG409,SpiceJet,Takeoff,243,233,258,2,Narrow,2,3.2
+G8109,GoAir,Landing,250,240,265,3,Narrow,2,4.2
+AI119,Air India,Takeoff,257,247,272,1,Super,4,8.4
+I5209,AirAsia,Landing,264,254,279,2,Narrow,2,3.9
+QP509,Akasa,Takeoff,271,261,286,3,Narrow,2,3.3
+AI121,Air India,Landing,278,268,293,1,Wide,3,6.8
+6E211,IndiGo,Takeoff,285,275,300,2,Narrow,2,3.4
+UK311,Vistara,Landing,291,281,306,3,Wide,3,5.7
+SG411,SpiceJet,Takeoff,298,288,313,2,Narrow,2,3.6
+G8111,GoAir,Landing,305,295,320,3,Narrow,2,4.1
+AI123,Air India,Takeoff,311,301,326,1,Super,5,8.2
+I5211,AirAsia,Landing,318,308,333,2,Narrow,2,3.8
+QP511,Akasa,Takeoff,324,314,339,3,Narrow,2,3.4
+AI149,Air India,Landing,653,643,668,1,Wide,3,6.7
+6E225,IndiGo,Takeoff,660,650,675,2,Narrow,2,3.3
+UK325,Vistara,Landing,667,657,682,3,Wide,3,5.6
+SG425,SpiceJet,Takeoff,674,664,689,2,Narrow,2,3.4
+G8125,GoAir,Landing,681,671,696,3,Narrow,2,4.1
+AI151,Air India,Takeoff,688,678,703,1,Super,5,8.3
+I5223,AirAsia,Landing,695,685,710,2,Narrow,2,3.6
+QP523,Akasa,Takeoff,702,692,717,3,Narrow,2,3.3
+AI153,Air India,Landing,709,699,724,1,Wide,3,6.5
+6E227,IndiGo,Takeoff,716,706,731,2,Narrow,2,3.1
+UK327,Vistara,Landing,723,713,738,3,Wide,3,5.4
+SG427,SpiceJet,Takeoff,730,720,745,2,Narrow,2,3.5
+G8127,GoAir,Landing,737,727,752,3,Narrow,2,4.0
+AI155,Air India,Takeoff,744,734,759,1,Super,4,8.4
+I5225,AirAsia,Landing,751,741,766,2,Narrow,2,3.8
+QP525,Akasa,Takeoff,758,748,773,3,Narrow,2,3.4
+AI157,Air India,Landing,765,755,780,1,Wide,3,6.9
+6E229,IndiGo,Takeoff,772,762,787,2,Narrow,2,3.3
+UK329,Vistara,Landing,779,769,794,3,Wide,3,5.2
+SG429,SpiceJet,Takeoff,786,776,801,2,Narrow,2,3.6
+G8129,GoAir,Landing,793,783,808,3,Narrow,2,4.2
+AI159,Air India,Takeoff,800,790,815,1,Super,5,8.5
+I5227,AirAsia,Landing,807,797,822,2,Narrow,2,3.7
+QP527,Akasa,Takeoff,814,804,829,3,Narrow,2,3.3
+AI161,Air India,Landing,821,811,836,1,Wide,3,6.8
+6E231,IndiGo,Takeoff,828,818,843,2,Narrow,2,3.4
+UK331,Vistara,Landing,835,825,850,3,Wide,3,5.6
+SG431,SpiceJet,Takeoff,842,832,857,2,Narrow,2,3.5
+G8131,GoAir,Landing,849,839,864,3,Narrow,2,4.1
+AI163,Air India,Takeoff,856,846,871,1,Super,4,8.7
+I5229,AirAsia,Landing,863,853,878,2,Narrow,2,3.9
+QP529,Akasa,Takeoff,870,860,885,3,Narrow,2,3.2
+AI165,Air India,Landing,877,867,892,1,Wide,3,6.4
+6E233,IndiGo,Takeoff,884,874,899,2,Narrow,2,3.5
+UK333,Vistara,Landing,891,881,906,3,Wide,3,5.3
+SG433,SpiceJet,Takeoff,898,888,913,2,Narrow,2,3.6
+G8133,GoAir,Landing,905,895,920,3,Narrow,2,4.2
+AI167,Air India,Takeoff,912,902,927,1,Super,5,8.6

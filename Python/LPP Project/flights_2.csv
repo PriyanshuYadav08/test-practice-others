@@ -1,0 +1,41 @@
+Flight_ID,Airline,Type,Scheduled,Early,Late,Priority,Size,Cost,Gap
+AI201,Air India,Landing,2,0,15,1,Medium,5.2,2
+6E310,IndiGo,Takeoff,3,0,16,2,Small,3.8,1
+UK410,Vistara,Landing,4,0,17,2,Large,6.8,3
+G8305,GoAir,Landing,5,0,18,2,Medium,5.0,2
+SG501,SpiceJet,Takeoff,6,0,19,3,Small,3.5,1
+AI203,Air India,Landing,7,1,20,1,Large,7.2,3
+I5201,AirAsia India,Takeoff,8,1,21,2,Small,3.9,1
+6E312,IndiGo,Landing,9,2,22,3,Medium,4.9,2
+UK412,Vistara,Takeoff,10,3,23,2,Small,3.6,1
+G8307,GoAir,Landing,11,4,24,2,Medium,5.1,2
+SG503,SpiceJet,Takeoff,12,5,25,3,Small,3.4,1
+AI205,Air India,Landing,13,6,26,1,Large,7.0,3
+QP101,Akasa Air,Takeoff,14,7,27,2,Small,4.0,1
+6E314,IndiGo,Landing,15,8,28,3,Medium,5.0,2
+UK414,Vistara,Landing,16,9,29,2,Large,6.7,3
+G8309,GoAir,Takeoff,17,10,30,3,Small,3.7,1
+SG505,SpiceJet,Landing,18,11,31,2,Medium,4.8,2
+AI207,Air India,Takeoff,19,12,32,1,Large,7.3,3
+I5203,AirAsia India,Landing,20,13,33,2,Medium,5.1,2
+6E316,IndiGo,Takeoff,21,14,34,3,Small,3.3,1
+UK416,Vistara,Landing,22,15,35,2,Medium,5.2,2
+G8311,GoAir,Landing,23,16,36,2,Large,6.9,3
+SG507,SpiceJet,Takeoff,24,17,37,3,Small,3.6,1
+AI209,Air India,Landing,25,18,38,1,Large,7.4,3
+QP103,Akasa Air,Takeoff,26,19,39,2,Small,4.1,1
+6E318,IndiGo,Landing,27,20,40,3,Medium,4.7,2
+UK418,Vistara,Takeoff,28,21,41,2,Small,3.8,1
+G8313,GoAir,Landing,29,22,42,2,Medium,5.0,2
+SG509,SpiceJet,Takeoff,30,23,43,3,Small,3.5,1
+AI211,Air India,Landing,32,24,45,1,Large,7.1,3
+6E320,IndiGo,Landing,33,25,46,3,Medium,4.9,2
+I5205,AirAsia India,Takeoff,34,26,47,2,Small,3.9,1
+UK420,Vistara,Landing,35,27,48,2,Large,6.8,3
+G8315,GoAir,Takeoff,36,28,49,3,Small,3.4,1
+SG511,SpiceJet,Landing,37,29,50,2,Medium,4.8,2
+AI213,Air India,Takeoff,38,30,51,1,Large,7.2,3
+6E322,IndiGo,Landing,40,31,53,3,Medium,5.0,2
+QP105,Akasa Air,Takeoff,41,32,54,2,Small,4.2,1
+UK422,Vistara,Landing,43,33,56,2,Medium,5.3,2
+AI215,Air India,Landing,45,35,59,1,Large,7.5,3

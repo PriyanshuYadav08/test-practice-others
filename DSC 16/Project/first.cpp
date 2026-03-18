@@ -8,14 +8,14 @@ using namespace std;
 int main()
 {
     // Parameters
-    double Smax = 200.0;
-    double K = 100.0;
-    double T = 1.0;
+    double Smax = 350.0;
+    double K = 150.0;
+    double T = 2.0;
     double r = 0.05;
     double sigma = 0.2;
 
-    int M = 200;  // stock steps
-    int N = 200;  // time steps
+    int M = 350;  // stock steps
+    int N = 350;  // time steps
 
     double dS = Smax / M;
     double dt = T / N;

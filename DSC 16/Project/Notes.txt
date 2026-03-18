@@ -1,0 +1,39 @@
+MatLab First code -
+
+    data = readmatrix('option_surface.csv');
+    
+    S = data(:,1);
+    V = data(:,2);
+    
+    figure
+    plot(S,V,'LineWidth',2)
+    xlabel('Stock Price')
+    ylabel('Option Value')
+    title('American Put Option Price')
+    grid on
+
+Second code -
+
+    K = 100;
+
+    payoff = max(K - S,0);
+
+    figure
+    plot(S,V,'b','LineWidth',2)
+    hold on
+    plot(S,payoff,'r--','LineWidth',2)
+
+    legend('Option Value','Payoff')
+    xlabel('Stock Price')
+    ylabel('Value')
+    title('American Put vs Payoff')
+    grid on
+
+Third code -
+
+    surf(S_grid, T_grid, V_matrix)
+    xlabel('Stock Price')
+    ylabel('Time')
+    zlabel('Option Value')
+    title('American Option Price Surface')
+    shading interp

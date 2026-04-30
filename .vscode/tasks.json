@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build and run",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "first.cpp",
+        "-o",
+        "first.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$gcc",
+      "detail": "Compile and run C++ program"
+    },
+    {
+      "label": "run program",
+      "type": "shell",
+      "command": "./first.exe"
+    }
+  ]
+}

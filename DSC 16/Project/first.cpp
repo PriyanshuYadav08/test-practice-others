@@ -97,7 +97,7 @@ int main()
     }
 
     // Save results
-    ofstream file("option_surface.csv");
+    ofstream file("american_put.csv");
 
     for(int i=0;i<=M;i++)
     {
@@ -106,7 +106,7 @@ int main()
 
     file.close();
 
-    cout << "Computation complete. Results saved to option_surface.csv\n";
+    cout << "Computation complete. Results saved to american_put.csv\n";
 
     return 0;
 }
